@@ -250,7 +250,7 @@ namespace AsStrongAsFuck
             Logger.LogMessage("Saving as ", Path + ".obfuscated", ConsoleColor.Yellow);
             ModuleWriterOptions opts = new ModuleWriterOptions(Module);
             opts.Logger = DummyLogger.NoThrowInstance;
-            Assembly.Write(Path + ".obfuscated", opts);
+            Assembly.Write(Path + ".obfuscated.exe", opts);
             Console.WriteLine("Saved.");
         }
 
